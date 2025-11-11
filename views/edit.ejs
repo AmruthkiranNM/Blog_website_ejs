@@ -1,0 +1,11 @@
+<%- include("partials/header.ejs") %>
+
+<h1>Edit Post</h1>
+
+<form action="/edit/<%= post.id %>" method="POST" class="compose-form">
+  <input type="text" name="postTitle" value="<%= post.title %>" required>
+  <textarea name="postBody" rows="8" required><%= post.content %></textarea>
+  <button type="submit">Update</button>
+</form>
+
+<%- include("partials/footer.ejs") %>
