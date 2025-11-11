@@ -37,25 +37,19 @@ blog-capstone/
  ┗ README.md
 
 ⚙️ Setup & Installation
-
 Clone this repository
-
 git clone https://github.com/AmruthkiranNM/blog-capstone.git
 cd blog-capstone
 
 
 Install dependencies
-
-npm install
-
+npm init -y
+npm install ejs express body-parser
 
 Run the app
-
-npm start
-
+nodemon app.js
 
 Open in your browser
-
 http://localhost:3000
 
 🧩 App Overview
@@ -80,22 +74,16 @@ Removes the selected post from the list.
 🎨 Styling
 
 The app uses a custom CSS stylesheet located in:
-
 /public/styles.css
 
-
 You can easily enhance it using:
-
 Bootstrap
-
 Flexbox/Grid
-
 Custom fonts or themes
 
 📦 Dependencies
 
 Installed via npm install:
-
 "dependencies": {
   "body-parser": "^1.20.3",
   "ejs": "^3.1.10",
